@@ -1,0 +1,146 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 36, Failures: 14, Errors: 0, Skipped: 7, Time elapsed: 29.912 sec <<< FAILURE! - in TestSuite
+checkContentLenght(com.employeeapi.testCases.TC001_Get_All_Employees)  Time elapsed: 0.031 sec  <<< FAILURE!
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.employeeapi.testCases.TC001_Get_All_Employees.checkContentLenght(TC001_Get_All_Employees.java:137)
+
+checkContentType(com.employeeapi.testCases.TC001_Get_All_Employees)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [application/json] but found [text/html; charset=UTF-8]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeeapi.testCases.TC001_Get_All_Employees.checkContentType(TC001_Get_All_Employees.java:103)
+
+checkStatusCode(com.employeeapi.testCases.TC001_Get_All_Employees)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [429]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.employeeapi.testCases.TC001_Get_All_Employees.checkStatusCode(TC001_Get_All_Employees.java:63)
+
+checkcontentEncoding(com.employeeapi.testCases.TC001_Get_All_Employees)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [gzip] but found [null]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeeapi.testCases.TC001_Get_All_Employees.checkcontentEncoding(TC001_Get_All_Employees.java:124)
+
+checkstatusLine(com.employeeapi.testCases.TC001_Get_All_Employees)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 429 Too Many Requests]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeeapi.testCases.TC001_Get_All_Employees.checkstatusLine(TC001_Get_All_Employees.java:90)
+
+checkContentLenght(com.employeeapi.testCases.TC002_Get_Single_Employee_Record)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkContentLenght(TC002_Get_Single_Employee_Record.java:93)
+
+checkContentType(com.employeeapi.testCases.TC003_Post_Employee_Record)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected [[text/html; charset=UTF-8] but found [text/html; charset=UTF-8]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeeapi.testCases.TC003_Post_Employee_Record.checkContentType(TC003_Post_Employee_Record.java:95)
+
+checkResposeBody(com.employeeapi.testCases.TC003_Post_Employee_Record)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.employeeapi.testCases.TC003_Post_Employee_Record.checkResposeBody(TC003_Post_Employee_Record.java:72)
+
+checkContentType(com.employeeapi.testCases.TC004_Put_Employee_Record)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected [application/json] but found [text/html; charset=UTF-8]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeeapi.testCases.TC004_Put_Employee_Record.checkContentType(TC004_Put_Employee_Record.java:95)
+
+checkResposeBody(com.employeeapi.testCases.TC004_Put_Employee_Record)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.employeeapi.testCases.TC004_Put_Employee_Record.checkResposeBody(TC004_Put_Employee_Record.java:71)
+
+checkStatusCode(com.employeeapi.testCases.TC004_Put_Employee_Record)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [429]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.employeeapi.testCases.TC004_Put_Employee_Record.checkStatusCode(TC004_Put_Employee_Record.java:80)
+
+checkcontentEncoding(com.employeeapi.testCases.TC004_Put_Employee_Record)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected [gzip] but found [null]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeeapi.testCases.TC004_Put_Employee_Record.checkcontentEncoding(TC004_Put_Employee_Record.java:109)
+
+checkstatusLine(com.employeeapi.testCases.TC004_Put_Employee_Record)  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 429 Too Many Requests]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeeapi.testCases.TC004_Put_Employee_Record.checkstatusLine(TC004_Put_Employee_Record.java:87)
+
+deleteEmployee(com.employeeapi.testCases.TC005_Delete_Employee_Record)  Time elapsed: 3.368 sec  <<< FAILURE!
+io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:83)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:893)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:928)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:895)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:975)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:201)
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.deleteEmployee(TC005_Delete_Employee_Record.java:49)
+
